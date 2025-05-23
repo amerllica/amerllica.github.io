@@ -9,7 +9,7 @@ import GithubIcon from '../../Icon/GithubIcon';
 // import InstagramIcon from '../../Icon/InstagramIcon';
 import LinkedInIcon from '../../Icon/LinkedInIcon';
 import MediumIcon from '../../Icon/MediumIcon';
-import TwitterIcon from '../../Icon/TwitterIcon';
+import XIcon from '../../Icon/XIcon';
 import Section from '../../Layout/Section';
 import ContactForm from './ContactForm';
 
@@ -21,7 +21,7 @@ const ContactValueMap: Record<ContactType, ContactValue> = {
   [ContactType.LinkedIn]: {Icon: LinkedInIcon, srLabel: 'LinkedIn'},
   [ContactType.Medium]: {Icon: MediumIcon, srLabel: 'Medium'},
   // [ContactType.Facebook]: {Icon: FacebookIcon, srLabel: 'Facebook'},
-  [ContactType.Twitter]: {Icon: TwitterIcon, srLabel: 'Twitter'},
+  [ContactType.Twitter]: {Icon: XIcon, srLabel: 'Twitter'},
   // [ContactType.Instagram]: {Icon: InstagramIcon, srLabel: 'Instagram'},
 };
 

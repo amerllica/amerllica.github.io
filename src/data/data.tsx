@@ -14,7 +14,7 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import MediumIcon from '../components/Icon/MediumIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+import XIcon from '../components/Icon/XIcon';
 import heroImage from '../images/header-background.webp';
 /*import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -533,5 +533,5 @@ export const socialLinks: Social[] = [
   {label: 'Medium', Icon: MediumIcon, href: 'https://medium.com/@amerllica/'},
   // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/amerllica/'},
   // {label: 'Facebook', Icon: FacebookIcon, href: 'https://fb.com/amerllica'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://x.com/amerllica'},
+  {label: 'Twitter', Icon: XIcon, href: 'https://x.com/amerllica'},
 ];
