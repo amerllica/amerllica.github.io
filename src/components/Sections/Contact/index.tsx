@@ -4,9 +4,9 @@ import {FC, memo} from 'react';
 
 import {contact, SectionId} from '../../../data/data';
 import {ContactType, ContactValue} from '../../../data/dataDef';
-import FacebookIcon from '../../Icon/FacebookIcon';
+// import FacebookIcon from '../../Icon/FacebookIcon';
 import GithubIcon from '../../Icon/GithubIcon';
-import InstagramIcon from '../../Icon/InstagramIcon';
+// import InstagramIcon from '../../Icon/InstagramIcon';
 import LinkedInIcon from '../../Icon/LinkedInIcon';
 import MediumIcon from '../../Icon/MediumIcon';
 import TwitterIcon from '../../Icon/TwitterIcon';
@@ -20,9 +20,9 @@ const ContactValueMap: Record<ContactType, ContactValue> = {
   [ContactType.Github]: {Icon: GithubIcon, srLabel: 'Github'},
   [ContactType.LinkedIn]: {Icon: LinkedInIcon, srLabel: 'LinkedIn'},
   [ContactType.Medium]: {Icon: MediumIcon, srLabel: 'Medium'},
-  [ContactType.Facebook]: {Icon: FacebookIcon, srLabel: 'Facebook'},
+  // [ContactType.Facebook]: {Icon: FacebookIcon, srLabel: 'Facebook'},
   [ContactType.Twitter]: {Icon: TwitterIcon, srLabel: 'Twitter'},
-  [ContactType.Instagram]: {Icon: InstagramIcon, srLabel: 'Instagram'},
+  // [ContactType.Instagram]: {Icon: InstagramIcon, srLabel: 'Instagram'},
 };
 
 const Contact: FC = memo(() => {

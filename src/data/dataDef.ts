@@ -125,9 +125,9 @@ export const ContactType = {
   Github: 'Github',
   LinkedIn: 'LinkedIn',
   Medium: 'Medium',
-  Facebook: 'Facebook',
+  // Facebook: 'Facebook',
   Twitter: 'Twitter',
-  Instagram: 'Instagram',
+  // Instagram: 'Instagram',
 } as const;
 
 export type ContactType = typeof ContactType[keyof typeof ContactType];

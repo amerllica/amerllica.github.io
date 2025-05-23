@@ -8,7 +8,7 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
-import FacebookIcon from '../components/Icon/FacebookIcon';
+// import FacebookIcon from '../components/Icon/FacebookIcon';
 import GithubIcon from '../components/Icon/GithubIcon';
 // import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
@@ -510,15 +510,15 @@ export const contact: ContactSection = {
       text: '@amerllica',
       href: 'https://medium.com/@amerllica',
     },
-    {
+    /* {
       type: ContactType.Facebook,
       text: 'fb/amerllica',
       href: 'https://fb.com/amerllica',
-    },
+    }, */
     {
       type: ContactType.Twitter,
       text: '@amerllica',
-      href: 'https://twitter.com/amerllica',
+      href: 'https://x.com/amerllica',
     },
   ],
 };
@@ -532,6 +532,6 @@ export const socialLinks: Social[] = [
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/amerllica/'},
   {label: 'Medium', Icon: MediumIcon, href: 'https://medium.com/@amerllica/'},
   // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/amerllica/'},
-  {label: 'Facebook', Icon: FacebookIcon, href: 'https://fb.com/amerllica'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/amerllica'},
+  // {label: 'Facebook', Icon: FacebookIcon, href: 'https://fb.com/amerllica'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://x.com/amerllica'},
 ];
