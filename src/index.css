@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Hacker-style color palette - WebStorm dark theme inspired */
+    --background: 0 0% 11%;              /* Deep black #1C1C1C */
+    --foreground: 120 100% 60%;          /* Electric green #00FF66 */
+
+    --card: 0 0% 14%;                    /* Slightly lighter black #242424 */
+    --card-foreground: 120 100% 70%;     /* Bright green */
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 120 100% 60%;
+
+    --primary: 120 100% 50%;             /* Pure green #00FF00 */
+    --primary-foreground: 0 0% 10%;      /* Dark for text on green */
+
+    --secondary: 0 0% 16%;               /* Dark gray #292929 */
+    --secondary-foreground: 120 100% 60%;
+
+    --muted: 0 0% 18%;                   /* Muted dark gray */
+    --muted-foreground: 120 40% 50%;     /* Muted green */
+
+    --accent: 150 100% 50%;              /* Cyan-green accent #00FFB3 */
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 120 20% 25%;               /* Dark green border */
+    --input: 0 0% 18%;
+    --ring: 120 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom hacker colors */
+    --terminal-green: 120 100% 60%;      /* #00FF66 */
+    --matrix-green: 120 100% 50%;        /* #00FF00 */
+    --neon-green: 150 100% 50%;          /* #00FFB3 */
+    --webstorm-bg: 0 0% 17%;             /* #2B2B2B */
+    --code-gray: 0 0% 35%;               /* #595959 */
+    
+    /* Glows and shadows */
+    --glow-green: 120 100% 50%;
+    --shadow-glow: 0 0 20px hsla(120, 100%, 50%, 0.3);
+    
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 120 100% 60%;
+    --sidebar-primary: 120 100% 50%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 120 100% 60%;
+    --sidebar-border: 120 20% 20%;
+    --sidebar-ring: 120 100% 50%;
+  }
+
+  .dark {
+    --background: 0 0% 11%;
+    --foreground: 120 100% 60%;
+    --card: 0 0% 14%;
+    --card-foreground: 120 100% 70%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 120 100% 60%;
+    --primary: 120 100% 50%;
+    --primary-foreground: 0 0% 10%;
+    --secondary: 0 0% 16%;
+    --secondary-foreground: 120 100% 60%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 120 40% 50%;
+    --accent: 150 100% 50%;
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 120 20% 25%;
+    --input: 0 0% 18%;
+    --ring: 120 100% 50%;
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 120 100% 60%;
+    --sidebar-primary: 120 100% 50%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 120 100% 60%;
+    --sidebar-border: 120 20% 20%;
+    --sidebar-ring: 120 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Fira Code', 'JetBrains Mono', monospace;
+    overflow-x: hidden;
+  }
+
+  /* Hacker-style glowing text */
+  .glow-text {
+    text-shadow: 0 0 10px hsl(var(--terminal-green)),
+                 0 0 20px hsl(var(--terminal-green)),
+                 0 0 30px hsl(var(--terminal-green));
+  }
+
+  .glow-text-subtle {
+    text-shadow: 0 0 5px hsl(var(--terminal-green)),
+                 0 0 10px hsl(var(--terminal-green));
+  }
+
+  /* Terminal cursor animation */
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  .terminal-cursor {
+    animation: blink 1s infinite;
+  }
+
+  /* Scan line effect */
+  @keyframes scanline {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100vh); }
+  }
+
+  .scanline {
+    animation: scanline 8s linear infinite;
+  }
+
+  /* Matrix-style fade in */
+  @keyframes matrix-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .matrix-fade-in {
+    animation: matrix-fade-in 0.6s ease-out;
+  }
+
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--accent));
+  }
+}
