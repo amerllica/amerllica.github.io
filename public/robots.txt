@@ -1,8 +1,21 @@
-User-agent: Googlebot
+User-agent: *
 Allow: /
+
+Sitemap: https://amerllica.ir/sitemap.xml
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 10
+
+User-agent: Yandex
+Allow: /
+Crawl-delay: 10
+
+# Disallow common non-existent or sensitive paths (good hygiene)
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /admin/
 
 User-agent: Twitterbot
 Allow: /
@@ -10,5 +23,5 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
+User-agent: Googlebot
 Allow: /
