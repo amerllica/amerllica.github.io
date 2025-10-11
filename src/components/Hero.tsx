@@ -94,7 +94,7 @@ export function Hero() {
               className="border-primary text-primary hover:bg-primary/10 font-mono gap-2"
               asChild
             >
-              <a href="/Amer_Lotfi-Orimi_Oct-2015.pdf" download>
+              <a href="/Amer_Lotfi-Orimi_Oct-2025.pdf" download>
                 <Download className="w-5 h-5" />
                 Download Resume
               </a>
