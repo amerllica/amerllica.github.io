@@ -1,7 +1,7 @@
 ![Stack Overflow Reputation](https://stackexchange.com/users/flair/1948645.png?theme=dark&latest)
 
 # 👋 Hi, I'm Amer Lotfi Orimi
-
+ 
 I'm a passionate **Full-Stack Engineer** with a strong focus on **frontend technologies** like JavaScript, TypeScript, ReactJS, and React Native — complemented by **backend experience** using Node.js and NestJS.
 
 I love building scalable web and mobile applications, modernizing legacy systems, and crafting efficient architectures. I’m also active on Stack Overflow and enjoy writing about clean, type-safe code.
