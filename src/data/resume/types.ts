@@ -1,7 +1,9 @@
 export type Month = `${number}-${number}`;
 
+export type LinkLabel = 'LinkedIn' | 'GitHub' | 'StackOverflow' | 'Medium' | 'npm';
+
 export type Link = {
-  label: string;
+  label: LinkLabel;
   handle: string;
   url: string;
 };

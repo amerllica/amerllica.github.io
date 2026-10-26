@@ -3,12 +3,12 @@ import { Github, Linkedin, Mail, Phone, type LucideIcon } from 'lucide-react';
 import { FaStackOverflow, FaMedium, FaNpm } from 'react-icons/fa6';
 import type { IconType } from 'react-icons';
 import { Button } from '@/components/ui/button';
-import { resume } from '@/data/resume';
+import { resume, type LinkLabel } from '@/data/resume';
 import { SectionHeader } from './SectionHeader';
 
 const { email, phone, phoneHref, links } = resume.profile;
 
-const socialIcons: Record<string, IconType | LucideIcon> = {
+const socialIcons: Record<LinkLabel, IconType | LucideIcon> = {
   LinkedIn: Linkedin,
   GitHub: Github,
   StackOverflow: FaStackOverflow,
