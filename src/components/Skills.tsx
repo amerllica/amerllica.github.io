@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { Terminal } from 'lucide-react';
 import { resume } from '@/data/resume';
+import { SectionHeader } from './SectionHeader';
 
 const coreSkills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'React Native', 'Next.js', 'Node.js', 'NestJS', 'Redux', 'Zustand', 'TanStack Query', 'Tailwind CSS', 'PostgreSQL', 'Docker', 'GitHub Actions', 'Playwright', 'Claude Code'];
 
@@ -15,13 +15,7 @@ export function Skills() {
           viewport={{ once: true }}
           className="space-y-12"
         >
-          {/* Section header */}
-          <div className="flex items-center gap-3 mb-8">
-            <Terminal className="w-8 h-8 text-primary" />
-            <h2 className="text-3xl md:text-4xl font-bold glow-text-subtle">
-              <span className="text-muted-foreground">//</span> Skills & Tech Stack
-            </h2>
-          </div>
+          <SectionHeader title="Skills & Tech Stack" />
 
           {/* Terminal-style display */}
           <div className="bg-card border-2 border-primary/30 rounded-lg overflow-hidden">

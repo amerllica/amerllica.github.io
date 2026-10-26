@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
-import { Terminal, Code2, Zap, Rocket, Bot } from 'lucide-react';
+import { Code2, Zap, Rocket, Bot } from 'lucide-react';
 import { resume } from '@/data/resume';
 import { Highlight } from '@/lib/highlight';
+import { SectionHeader } from './SectionHeader';
 
 const summaryIcons = [Code2, Zap, Rocket, Bot];
 
@@ -16,13 +17,7 @@ export function About() {
           viewport={{ once: true }}
           className="space-y-8"
         >
-          {/* Section header */}
-          <div className="flex items-center gap-3 mb-8">
-            <Terminal className="w-8 h-8 text-primary" />
-            <h2 className="text-3xl md:text-4xl font-bold glow-text-subtle">
-              <span className="text-muted-foreground">//</span> About Me
-            </h2>
-          </div>
+          <SectionHeader title="About Me" />
 
           {/* Content */}
           <div className="bg-card border border-border rounded-lg p-6 md:p-8 space-y-6">

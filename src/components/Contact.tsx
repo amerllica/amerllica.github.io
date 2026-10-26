@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
-import { Terminal, Github, Linkedin, Mail, Phone, type LucideIcon } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, type LucideIcon } from 'lucide-react';
 import { FaStackOverflow, FaMedium, FaNpm } from 'react-icons/fa6';
 import type { IconType } from 'react-icons';
 import { Button } from '@/components/ui/button';
 import { resume } from '@/data/resume';
+import { SectionHeader } from './SectionHeader';
 
 const { email, phone, phoneHref, links } = resume.profile;
 
@@ -26,13 +27,7 @@ export function Contact() {
           viewport={{ once: true }}
           className="space-y-12"
         >
-          {/* Section header */}
-          <div className="flex items-center gap-3 mb-8">
-            <Terminal className="w-8 h-8 text-primary" />
-            <h2 className="text-3xl md:text-4xl font-bold glow-text-subtle">
-              <span className="text-muted-foreground">//</span> Get In Touch
-            </h2>
-          </div>
+          <SectionHeader title="Get In Touch" />
 
           {/* Contact grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

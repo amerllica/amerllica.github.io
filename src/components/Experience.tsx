@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
-import { Terminal, Briefcase, ExternalLink } from 'lucide-react';
+import { Briefcase, ExternalLink } from 'lucide-react';
 import { formatPeriod, resume } from '@/data/resume';
+import { SectionHeader } from './SectionHeader';
 
 export function Experience() {
   return (
@@ -13,13 +14,7 @@ export function Experience() {
           viewport={{ once: true }}
           className="space-y-12"
         >
-          {/* Section header */}
-          <div className="flex items-center gap-3 mb-8">
-            <Terminal className="w-8 h-8 text-primary" />
-            <h2 className="text-3xl md:text-4xl font-bold glow-text-subtle">
-              <span className="text-muted-foreground">//</span> Experience
-            </h2>
-          </div>
+          <SectionHeader title="Experience" />
 
           {/* Timeline */}
           <div className="relative">

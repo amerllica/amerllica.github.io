@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
-import { Terminal, Quote } from 'lucide-react';
+import { Quote } from 'lucide-react';
 import { resume } from '@/data/resume';
+import { SectionHeader } from './SectionHeader';
 
 export function Recommendations() {
   return (
@@ -13,13 +14,7 @@ export function Recommendations() {
           viewport={{ once: true }}
           className="space-y-12"
         >
-          {/* Section header */}
-          <div className="flex items-center gap-3 mb-8">
-            <Terminal className="w-8 h-8 text-primary" />
-            <h2 className="text-3xl md:text-4xl font-bold glow-text-subtle">
-              <span className="text-muted-foreground">//</span> LinkedIn Recommendations
-            </h2>
-          </div>
+          <SectionHeader title="LinkedIn Recommendations" />
 
           {/* Recommendations grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
