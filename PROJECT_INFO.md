@@ -54,28 +54,23 @@ Custom CSS classes:
 - `.terminal-cursor` - Blinking cursor animation
 - `.scanline` - Matrix-style scan line effect
 
-## 📄 Resume PDF
+## 📄 Resume PDF and DOCX
 
-To add your actual resume PDF:
+All resume content lives in `src/data/resume/`. The site sections and the generated resume read from it.
 
-1. Replace the placeholder file at `public/Amer_Lotfi_Orimi_Resume.pdf`
-2. The download button is already configured in the Hero section
-3. Make sure the filename matches: `Amer_Lotfi_Orimi_Resume.pdf`
+1. Edit the data in `src/data/resume/`
+2. Run `yarn resume:build` to write `public/Amer_Lotfi-Orimi_Oct-2026.pdf` and `.docx` and run the ATS check
+3. The files are git-ignored; `yarn export` (and CI) builds them before the site
+4. Old resume URLs redirect with `public/*.pdf.html` meta-refresh pages (GitHub Pages only, not `yarn dev`)
 
 ## 🚀 Development
 
 ```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
+yarn install
+yarn resume:build
+yarn dev
+yarn export
+yarn preview
 ```
 
 ## 📱 Sections
@@ -140,4 +135,4 @@ To customize the colors, edit `src/index.css`:
 ## 📄 License
 
 Personal portfolio website for Amer Lotfi Orimi
-© 2025 All rights reserved
+© 2026 All rights reserved
