@@ -92,6 +92,7 @@ export const experience: Experience[] = [
       'Reviewed architecture and performance strategy',
       'Supported onboarding and technology decisions',
     ],
+    printLine: 'Reviewed architecture and performance strategy',
     detail: 'brief',
   },
   {
@@ -105,6 +106,7 @@ export const experience: Experience[] = [
       'Maintained a large React codebase for the social networking platform',
       'Mentored junior developers and improved codebase modularity',
     ],
+    printLine: 'Maintained a large React codebase for the social networking platform',
     detail: 'brief',
   },
   {
@@ -133,6 +135,7 @@ export const experience: Experience[] = [
       'Developed with React Native and TypeScript, including native module integration',
       'Improved app performance and usability',
     ],
+    printLine: 'Developed with React Native and TypeScript, including native module integration',
     detail: 'brief',
   },
   {
@@ -147,6 +150,7 @@ export const experience: Experience[] = [
       'Practised pair programming and code review',
       'Wrote Android and iOS build scripts and configured Webpack and ESLint',
     ],
+    printLine: 'Built reusable UI components, navigation and composite components with React and React Native',
     detail: 'brief',
   },
   {
@@ -162,6 +166,7 @@ export const experience: Experience[] = [
       'Built modular NestJS REST APIs in TypeScript and an Express.js message broker',
       'Defined coding standards and architecture patterns for the team',
     ],
+    printLine: 'Created a React boilerplate with routing, authentication and API integration',
     detail: 'brief',
   },
   {
@@ -178,6 +183,7 @@ export const experience: Experience[] = [
       'Code still runs in production after 8+ years',
     ],
     link: 'https://digikala.com',
+    printLine: 'Rebuilt the search page as a single-page React application',
     detail: 'brief',
   },
   {
@@ -192,6 +198,7 @@ export const experience: Experience[] = [
       'Configured DNS, hosting, VPS, NGINX, Apache and IIS',
       'Moved from UI work toward Node.js and backend principles',
     ],
+    printLine: 'Built UIs with HTML, CSS, Less, SCSS, JavaScript, jQuery, Bootstrap and UIkit',
     detail: 'brief',
   },
 ];

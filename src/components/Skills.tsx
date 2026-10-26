@@ -2,8 +2,6 @@ import { motion } from 'framer-motion';
 import { resume } from '@/data/resume';
 import { SectionHeader } from './SectionHeader';
 
-const coreSkills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'React Native', 'Next.js', 'Node.js', 'NestJS', 'Redux', 'Zustand', 'TanStack Query', 'Tailwind CSS', 'PostgreSQL', 'Docker', 'GitHub Actions', 'Playwright', 'Claude Code'];
-
 export function Skills() {
   return (
     <section id="skills" className="py-20 px-4 md:px-8 bg-secondary/30">
@@ -32,7 +30,7 @@ export function Skills() {
             <div className="p-6 font-mono text-sm space-y-2">
               <div className="text-primary">$ cat tech_stack.txt</div>
               <div className="pl-4 space-y-1 text-foreground/80">
-                {coreSkills.map((skill, i) => (
+                {resume.coreSkills.map((skill, i) => (
                   <motion.div
                     key={skill}
                     initial={{ opacity: 0, x: -20 }}

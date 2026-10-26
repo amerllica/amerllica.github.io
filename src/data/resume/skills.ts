@@ -1,5 +1,7 @@
 import type { SkillCategory } from './types';
 
+export const coreSkills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'React Native', 'Next.js', 'Node.js', 'NestJS', 'Redux', 'Zustand', 'TanStack Query', 'Tailwind CSS', 'PostgreSQL', 'Docker', 'GitHub Actions', 'Playwright', 'Claude Code'];
+
 export const skills: SkillCategory[] = [
   {
     title: 'Frontend',

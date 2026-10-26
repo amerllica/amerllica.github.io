@@ -1,4 +1,4 @@
-import { formatMonth, formatPeriod, resume, RESUME_BASE, type PullRequest } from '../../src/data/resume/index.ts';
+import { formatLocation, formatMonth, formatPeriod, resume, RESUME_BASE, type PullRequest } from '../../src/data/resume/index.ts';
 
 export type Block =
   | { type: 'entry'; title: string; subtitle?: string; dates: string }
@@ -20,7 +20,7 @@ export const outputPath = (extension: 'pdf' | 'docx') =>
 export const header = {
   name: profile.name,
   headline: profile.headline,
-  contact: [profile.location, profile.email, profile.phone].join(' | '),
+  contact: [formatLocation(profile), profile.email, profile.phone].join(' | '),
   links: [profile.website, ...profile.links.map((link) => link.url)].map(
     (url): DocumentLink => ({ text: displayUrl(url), url }),
   ),
@@ -42,7 +42,7 @@ const experienceBlocks = resume.experience.flatMap((job): Block[] => [
   },
   ...(job.detail === 'full'
     ? job.bullets.map((text): Block => ({ type: 'bullet', text }))
-    : [{ type: 'text', text: `${job.summary} ${job.bullets[0]}.` } satisfies Block]),
+    : [{ type: 'text', text: `${job.summary} ${job.printLine}.` } satisfies Block]),
 ]);
 
 export const sections: Section[] = [

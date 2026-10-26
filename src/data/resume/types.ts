@@ -12,15 +12,18 @@ export type Profile = {
   name: string;
   title: string;
   headline: string;
-  location: string;
+  description: string;
+  city: string;
+  country: string;
+  countryCode: string;
+  workMode: string;
   email: string;
   phone: string;
-  phoneHref: string;
   website: string;
   links: Link[];
 };
 
-export type Experience = {
+type ExperienceBase = {
   role: string;
   company: string;
   location: string;
@@ -29,8 +32,9 @@ export type Experience = {
   summary: string;
   bullets: string[];
   link?: string;
-  detail: 'full' | 'brief';
 };
+
+export type Experience = ExperienceBase & ({ detail: 'full' } | { detail: 'brief'; printLine: string });
 
 export type SkillCategory = {
   title: string;
@@ -104,6 +108,7 @@ export type Resume = {
   summary: string[];
   metrics: Metric[];
   experience: Experience[];
+  coreSkills: string[];
   skills: SkillCategory[];
   education: Education[];
   languages: Language[];

@@ -3,7 +3,7 @@ import { articles, stackOverflow } from './writing';
 import { packages, pullRequests } from './open-source';
 import { education, highlightTerms, languages, metrics, profile, summary, tagline } from './profile';
 import { recommendations } from './recommendations';
-import { skills } from './skills';
+import { coreSkills, skills } from './skills';
 import type { Resume } from './types';
 
 export const resume: Resume = {
@@ -13,6 +13,7 @@ export const resume: Resume = {
   summary,
   metrics,
   experience,
+  coreSkills,
   skills,
   education,
   languages,

@@ -4,10 +4,14 @@ export const profile: Profile = {
   name: 'Amer Lotfi Orimi',
   title: 'Senior Frontend Engineer | Full-Stack | AI-Powered',
   headline: 'Senior Frontend Engineer (React / React Native) | Full-Stack with Node.js & NestJS | AI-Powered Engineering',
-  location: 'Tehran, Iran (Open to Remote)',
+  description:
+    'Senior Frontend Engineer (React, React Native, TypeScript) and full-stack developer with Node.js and NestJS. Open-source author, 33K+ Stack Overflow reputation, AI-powered engineering workflows.',
+  city: 'Tehran',
+  country: 'Iran',
+  countryCode: 'IR',
+  workMode: 'Open to Remote',
   email: 'amerllica@gmail.com',
   phone: '+98 920 201 6078',
-  phoneHref: 'tel:+989202016078',
   website: 'https://amerllica.ir',
   links: [
     { label: 'LinkedIn', handle: '@amerllica', url: 'https://linkedin.com/in/amerllica' },
