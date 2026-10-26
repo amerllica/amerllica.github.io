@@ -10,11 +10,13 @@ import { OpenSource } from '@/components/OpenSource';
 import { Writing } from '@/components/Writing';
 import { Education } from '@/components/Education';
 import { StackOverflowCard } from '@/components/StackOverflowCard';
+import { Seo } from '@/components/Seo';
 import { getVersion } from '@/lib/utils';
 
 const Index = () => {
   return (
     <div className="relative min-h-screen">
+      <Seo />
       {/* Three.js animated background */}
       <ThreeBackground />
 
