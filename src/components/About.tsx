@@ -1,5 +1,9 @@
 import { motion } from 'framer-motion';
-import { Terminal, Code2, Zap } from 'lucide-react';
+import { Terminal, Code2, Zap, Rocket, Bot } from 'lucide-react';
+import { resume } from '@/data/resume';
+import { Highlight } from '@/lib/highlight';
+
+const summaryIcons = [Code2, Zap, Rocket, Bot];
 
 export function About() {
   return (
@@ -22,67 +26,41 @@ export function About() {
 
           {/* Content */}
           <div className="bg-card border border-border rounded-lg p-6 md:p-8 space-y-6">
-            <div className="flex items-start gap-4">
-              <Code2 className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
-              <p className="text-foreground/90 text-lg leading-relaxed">
-                I'm a passionate full-stack engineer with a strong foundation in front-end 
-                technologies like <span className="text-primary font-semibold">JavaScript</span>,{' '}
-                <span className="text-primary font-semibold">TypeScript</span>,{' '}
-                <span className="text-primary font-semibold">ReactJS</span>, and{' '}
-                <span className="text-primary font-semibold">React Native</span>, complemented 
-                by solid back-end experience with{' '}
-                <span className="text-primary font-semibold">Node.js</span> and the{' '}
-                <span className="text-primary font-semibold">NestJS</span> framework.
-              </p>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <Zap className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
-              <p className="text-foreground/90 text-lg leading-relaxed">
-                My work spans building and maintaining scalable web and mobile applications, 
-                modernising legacy systems, and designing efficient architectures. I thrive on 
-                solving complex problems end-to-end, from crafting intuitive UIs to developing 
-                robust APIs.
-              </p>
-            </div>
-
-            <div className="border-l-4 border-primary pl-6 py-2">
-              <p className="text-foreground/90 text-lg leading-relaxed italic">
-                Outside of work, I enjoy writing technical blog posts, contributing to{' '}
-                <a 
-                  href="https://stackoverflow.com/users/6877799/amerllica" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-accent hover:text-accent/80 underline transition-colors"
-                >
-                  Stack Overflow
-                </a>, and advocating for clean, type-safe code across the stack.
-              </p>
-            </div>
+            {resume.summary.map((paragraph, idx) => {
+              const Icon = summaryIcons[idx % summaryIcons.length];
+              return (
+                <div key={idx} className="flex items-start gap-4">
+                  <Icon className="w-6 h-6 text-accent mt-1 flex-shrink-0" />
+                  <p className="text-foreground/90 text-lg leading-relaxed">
+                    <Highlight text={paragraph} terms={resume.highlightTerms} />
+                  </p>
+                </div>
+              );
+            })}
           </div>
 
           {/* Location & Contact info */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-secondary border border-border rounded-lg p-4 text-center">
               <p className="text-muted-foreground text-sm mb-1">Location</p>
-              <p className="text-primary font-semibold">Tehran, Iran</p>
+              <p className="text-primary font-semibold">{resume.profile.location}</p>
             </div>
             <div className="bg-secondary border border-border rounded-lg p-4 text-center">
               <p className="text-muted-foreground text-sm mb-1">Email</p>
               <a 
-                href="mailto:amerllica@gmail.com"
+                href={`mailto:${resume.profile.email}`}
                 className="text-primary font-semibold hover:text-accent transition-colors"
               >
-                amerllica@gmail.com
+                {resume.profile.email}
               </a>
             </div>
             <div className="bg-secondary border border-border rounded-lg p-4 text-center">
               <p className="text-muted-foreground text-sm mb-1">Phone</p>
               <a 
-                href="tel:+989202016078"
+                href={resume.profile.phoneHref}
                 className="text-primary font-semibold hover:text-accent transition-colors"
               >
-                +98 920 201 6078
+                {resume.profile.phone}
               </a>
             </div>
           </div>

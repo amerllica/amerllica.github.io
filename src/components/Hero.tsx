@@ -2,6 +2,8 @@ import { Download, Terminal, Code } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import avatar from '@/assets/avatar.png';
+import { resume, resumePdfPath } from '@/data/resume';
+import { Highlight } from '@/lib/highlight';
 
 export function Hero() {
   return (
@@ -23,7 +25,7 @@ export function Hero() {
             <div className="w-40 h-40 md:w-48 md:h-48 mx-auto rounded-full overflow-hidden border-4 border-primary animate-pulse-glow">
               <img
                 src={avatar}
-                alt="Amer Lotfi Orimi"
+                alt={resume.profile.name}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -49,11 +51,11 @@ export function Hero() {
             transition={{ delay: 0.6 }}
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold glow-text mb-4">
-              Amer Lotfi Orimi
+              {resume.profile.name}
             </h1>
             <div className="flex items-center justify-center gap-2 text-xl md:text-2xl text-accent">
               <Code className="w-6 h-6" />
-              <span className="font-mono">Full-Stack Engineer</span>
+              <span className="font-mono">{resume.profile.title}</span>
             </div>
           </motion.div>
 
@@ -64,11 +66,7 @@ export function Hero() {
             transition={{ delay: 0.8 }}
             className="text-lg md:text-xl max-w-3xl mx-auto text-foreground/80 leading-relaxed"
           >
-            Passionate about building scalable web & mobile applications with{' '}
-            <span className="text-primary font-semibold">React</span>,{' '}
-            <span className="text-primary font-semibold">TypeScript</span>,{' '}
-            <span className="text-primary font-semibold">Node.js</span>, and{' '}
-            <span className="text-primary font-semibold">NestJS</span>
+            <Highlight text={resume.tagline} terms={resume.highlightTerms} />
           </motion.p>
 
           {/* CTA Buttons */}
@@ -94,7 +92,7 @@ export function Hero() {
               className="border-primary text-primary hover:bg-primary/10 font-mono gap-2"
               asChild
             >
-              <a href="/Amer_Lotfi-Orimi_Oct-2025.pdf" download>
+              <a href={resumePdfPath} download>
                 <Download className="w-5 h-5" />
                 Download Resume
               </a>
