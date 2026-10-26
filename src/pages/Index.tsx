@@ -5,11 +5,18 @@ import { Experience } from '@/components/Experience';
 import { Skills } from '@/components/Skills';
 import { Recommendations } from '@/components/Recommendations';
 import { Contact } from '@/components/Contact';
+import { Highlights } from '@/components/Highlights';
+import { OpenSource } from '@/components/OpenSource';
+import { Writing } from '@/components/Writing';
+import { Education } from '@/components/Education';
+import { StackOverflowCard } from '@/components/StackOverflowCard';
+import { Seo } from '@/components/Seo';
 import { getVersion } from '@/lib/utils';
 
 const Index = () => {
   return (
     <div className="relative min-h-screen">
+      <Seo />
       {/* Three.js animated background */}
       <ThreeBackground />
 
@@ -21,9 +28,14 @@ const Index = () => {
       {/* Main content */}
       <main className="relative z-10">
         <Hero />
+        <Highlights />
         <About />
         <Experience />
         <Skills />
+        <OpenSource />
+        <Writing />
+        <Education />
+        <StackOverflowCard />
         <Recommendations />
         <Contact />
       </main>
@@ -39,7 +51,7 @@ const Index = () => {
             <span className="text-accent">Three.js</span>
           </p>
           <p className="text-muted-foreground font-mono text-xs mt-2">
-            © 2025 Amer Lotfi Orimi. All rights reserved.
+            © {new Date().getFullYear()} Amer Lotfi Orimi. All rights reserved.
           </p>
           <p className="text-muted-foreground font-mono text-xs mt-2">
             version: {getVersion()}

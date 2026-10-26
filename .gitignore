@@ -37,3 +37,8 @@ dist-ssr
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Generated resume (yarn resume:build)
+#
+public/Amer_Lotfi-Orimi_*.pdf
+public/Amer_Lotfi-Orimi_*.docx
