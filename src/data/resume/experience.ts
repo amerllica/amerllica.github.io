@@ -5,7 +5,7 @@ export const experience: Experience[] = [
     role: 'Senior Frontend Engineer',
     company: 'Altex',
     location: 'Tehran, Iran',
-    start: '2026-01',
+    start: '2025-12',
     end: 'Present',
     summary:
       'Frontend owner for Altex, a cryptocurrency exchange. Responsible for the exchange web app, the B2B platform, the admin panel and the landing site and blog.',
@@ -23,8 +23,8 @@ export const experience: Experience[] = [
     role: 'Full Stack Developer',
     company: 'XOLAB',
     location: 'Dubai, UAE (Remote)',
-    start: '2025-06',
-    end: '2025-12',
+    start: '2025-05',
+    end: '2025-11',
     summary:
       'Core developer of VTUS, a web platform for law firms that help immigrants get U.S. visas. Owned the frontend architecture and supported the backend services.',
     bullets: [
