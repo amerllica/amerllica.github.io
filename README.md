@@ -9,7 +9,7 @@ I'm a **Senior Frontend Engineer (React / React Native)** and full-stack develop
 ---
 
 ## 💼 Current Role
-**Senior Frontend Engineer at Altex** (Tehran, since January 2026)
+**Senior Frontend Engineer at Altex** (Tehran, since December 2025)
 - Exchange web app: React, TypeScript, TanStack Query, Zustand, Socket.IO, TradingView charts
 - B2B platform in an Nx monorepo, admin panel (MUI, RTL), landing and blog on Next.js 16 + Payload CMS
 - Storybook design system, Playwright, Sentry, PostHog, i18next (fa/en)
