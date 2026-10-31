@@ -39,7 +39,7 @@ export const articles: Article[] = [
 ];
 
 export const stackOverflow: StackOverflowStats = {
-  url: 'https://stackoverflow.com/users/6877799/amerllica',
+  url: 'https://stackoverflow.com/users/amerllica',
   flairUrl: 'https://stackexchange.com/users/flair/1948645.png?theme=dark&latest',
   reputation: 33247,
   peopleReached: '40.8M',

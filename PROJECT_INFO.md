@@ -87,7 +87,7 @@ yarn preview
 All social links are integrated in the Contact section:
 - LinkedIn: [@amerllica](https://linkedin.com/in/amerllica)
 - GitHub: [@amerllica](https://github.com/amerllica)
-- StackOverflow: [amerllica](https://stackoverflow.com/users/6877799/amerllica)
+- StackOverflow: [amerllica](https://stackoverflow.com/users/amerllica)
 - Medium: [@amerllica](https://medium.com/@amerllica)
 - Email: amerllica@gmail.com
 - Phone: +98 920 201 6078

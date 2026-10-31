@@ -63,4 +63,4 @@ This writes `public/Amer_Lotfi-Orimi_Oct-2026.pdf` and `.docx` and runs the ATS 
 📫 **Contact me:**  
 📧 [amerllica@gmail.com](mailto:amerllica@gmail.com)  
 🌐 [amerllica.ir](https://amerllica.ir)  
-💼 [LinkedIn](https://linkedin.com/in/amerllica) | [StackOverflow](https://stackoverflow.com/users/6877799/amerllica) | [Medium](https://medium.com/@amerllica) | [npm](https://www.npmjs.com/~amerllica)
+💼 [LinkedIn](https://linkedin.com/in/amerllica) | [StackOverflow](https://stackoverflow.com/users/amerllica) | [Medium](https://medium.com/@amerllica) | [npm](https://www.npmjs.com/~amerllica)

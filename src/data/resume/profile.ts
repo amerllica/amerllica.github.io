@@ -16,7 +16,7 @@ export const profile: Profile = {
   links: [
     { label: 'LinkedIn', handle: '@amerllica', url: 'https://linkedin.com/in/amerllica' },
     { label: 'GitHub', handle: '@amerllica', url: 'https://github.com/amerllica' },
-    { label: 'StackOverflow', handle: 'amerllica', url: 'https://stackoverflow.com/users/6877799/amerllica' },
+    { label: 'StackOverflow', handle: 'amerllica', url: 'https://stackoverflow.com/users/amerllica' },
     { label: 'Medium', handle: '@amerllica', url: 'https://medium.com/@amerllica' },
     { label: 'npm', handle: '~amerllica', url: 'https://www.npmjs.com/~amerllica' },
   ],
