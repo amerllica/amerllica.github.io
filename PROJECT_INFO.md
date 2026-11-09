@@ -61,7 +61,7 @@ All resume content lives in `src/data/resume/`. The site sections and the genera
 1. Edit the data in `src/data/resume/`
 2. Run `yarn resume:build` to write `public/Amer_Lotfi-Orimi_Oct-2026.pdf` and `.docx` and run the ATS check
 3. The files are git-ignored; `yarn export` (and CI) builds them before the site
-4. Old resume URLs redirect with `public/*.pdf.html` meta-refresh pages (GitHub Pages only, not `yarn dev`)
+4. Old resume URLs redirect to the current PDF with a 301 Cloudflare Redirect Rule on `amerllica.ir`, not with files in this repo
 
 ## 🚀 Development
 
