@@ -1,34 +1,26 @@
 import type { SkillCategory } from './types';
 
-export const coreSkills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'React Native', 'Next.js', 'Node.js', 'NestJS', 'Redux', 'Zustand', 'TanStack Query', 'Tailwind CSS', 'PostgreSQL', 'Docker', 'GitHub Actions', 'Playwright', 'Claude Code'];
+export const coreSkills = ['TypeScript', 'React', 'React Native', 'Next.js', 'Nitro Modules (Kotlin, Swift)', 'Node.js', 'NestJS', 'TanStack Query', 'Zustand', 'Tailwind CSS', 'PostgreSQL', 'Docker', 'Playwright', 'Claude Code'];
 
 export const skills: SkillCategory[] = [
   {
     title: 'Frontend',
-    skills: ['JavaScript (ES6+)', 'TypeScript', 'React', 'Next.js', 'React Router', 'Redux', 'Zustand', 'TanStack Query', 'Formik', 'HTML5', 'CSS3', 'Tailwind CSS', 'SCSS/Sass', 'Responsive Design', 'Web Accessibility', 'Radix UI', 'MUI', 'Storybook', 'Server-Side Rendering', 'PWA', 'i18n / RTL'],
+    skills: ['TypeScript', 'JavaScript (ES6+)', 'React', 'Next.js', 'Redux', 'Zustand', 'TanStack Query', 'Tailwind CSS', 'CSS3', 'Storybook', 'Server-Side Rendering', 'PWA', 'Web Accessibility', 'Responsive Design', 'i18n / RTL'],
   },
   {
     title: 'Mobile',
-    skills: ['React Native', 'Expo', 'Nitro Modules', 'New Architecture (Fabric, JSI)', 'React Native Skia', 'Kotlin', 'Swift', 'iOS', 'Android'],
+    skills: ['React Native', 'Expo', 'Nitro Modules', 'New Architecture (Fabric, JSI)', 'Kotlin', 'Swift', 'iOS', 'Android'],
   },
   {
     title: 'Backend',
-    skills: ['Node.js', 'NestJS', 'Express.js', 'REST APIs', 'PostgreSQL', 'Redis', 'RabbitMQ', 'WebSockets', 'Socket.IO', 'Payload CMS'],
+    skills: ['Node.js', 'NestJS', 'REST APIs', 'PostgreSQL', 'Redis', 'WebSockets'],
   },
   {
-    title: 'Testing & Quality',
-    skills: ['Jest', 'Vitest', 'Playwright', 'React Testing Library', 'ESLint', 'Prettier', 'Code Review', 'Sentry'],
+    title: 'Testing & DevOps',
+    skills: ['Jest', 'Vitest', 'Playwright', 'React Testing Library', 'ESLint', 'Git', 'GitHub Actions', 'CI/CD', 'Docker', 'Monorepo (Nx)', 'Vite', 'Webpack'],
   },
   {
-    title: 'DevOps & Tools',
-    skills: ['Git', 'GitHub Actions', 'GitLab CI', 'CI/CD', 'Docker', 'Nx', 'Turborepo', 'Vite', 'Webpack', 'NGINX', 'Jira', 'Figma'],
-  },
-  {
-    title: 'AI Engineering',
-    skills: ['Claude Code', 'Model Context Protocol (MCP)', 'AI Agent Workflows', 'AI-Assisted Code Review', 'Prompt Engineering'],
-  },
-  {
-    title: 'Leadership',
-    skills: ['Team Leadership', 'Mentoring', 'Software Architecture', 'Agile / Scrum', 'Technical Writing', 'Communication'],
+    title: 'Leadership & AI',
+    skills: ['Team Leadership', 'Mentoring', 'Software Architecture', 'Code Review', 'Agile / Scrum', 'Claude Code', 'MCP (AI agents)'],
   },
 ];
