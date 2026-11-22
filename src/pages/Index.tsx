@@ -30,12 +30,12 @@ const Index = () => {
         <Hero />
         <Highlights />
         <About />
+        <OpenSource />
+        <StackOverflowCard />
         <Experience />
         <Skills />
-        <OpenSource />
         <Writing />
         <Education />
-        <StackOverflowCard />
         <Recommendations />
         <Contact />
       </main>
