@@ -2,14 +2,15 @@ import type { Education, Language, Metric, Profile } from './types';
 
 export const profile: Profile = {
   name: 'Amer Lotfi Orimi',
-  title: 'Senior Frontend Engineer | Full-Stack | AI-Powered',
-  headline: 'Senior Frontend Engineer (React / React Native) | Full-Stack with Node.js & NestJS | AI-Powered Engineering',
+  title: 'Senior Frontend & React Native Engineer',
+  headline:
+    'Senior Frontend Engineer | Senior React Native Engineer | Native Modules (Kotlin, Swift) | React, Next.js, TypeScript | Node.js, NestJS',
   description:
-    'Senior Frontend Engineer (React, React Native, TypeScript) and full-stack developer with Node.js and NestJS. Open-source author, 33K+ Stack Overflow reputation, AI-powered engineering workflows.',
+    'Senior Frontend and React Native Engineer: React, Next.js, TypeScript and native modules in Kotlin and Swift. Open-source author, React Native contributor, 33K+ Stack Overflow reputation. Open to relocation with visa sponsorship, or remote work.',
   city: 'Tehran',
   country: 'Iran',
   countryCode: 'IR',
-  workMode: 'Open to Remote',
+  workMode: 'Open to relocation with visa sponsorship, or remote',
   email: 'amerllica@gmail.com',
   phone: '+98 920 201 6078',
   website: 'https://amerllica.ir',
@@ -23,10 +24,13 @@ export const profile: Profile = {
 };
 
 export const tagline =
-  'Building fast, scalable web & mobile products with React, React Native, TypeScript, Node.js and NestJS, shipped faster with AI agent workflows';
+  'Building fast web and mobile products with React, React Native and TypeScript, down to native modules in Kotlin and Swift. Open to relocation with visa sponsorship, or remote work (UTC+3:30).';
 
 export const highlightTerms = [
   'React Native',
+  'Kotlin',
+  'Swift',
+  'relocation',
   'React',
   'TypeScript',
   'JavaScript',
@@ -37,9 +41,9 @@ export const highlightTerms = [
 ];
 
 export const summary = [
-  'Senior Frontend Engineer with 10+ years of production experience in JavaScript, TypeScript, React and React Native, and 15+ years in web development. Full-stack capable with Node.js, NestJS, PostgreSQL, Redis and Docker.',
-  'Led frontend teams, designed scalable architectures for e-commerce, social networking, fintech and crypto exchange products, and set engineering standards (ESLint, testing, CI/CD) that became company-wide references.',
+  'Senior Frontend and React Native Engineer with 15+ years in web development, most of them with JavaScript, TypeScript, React and React Native. Full-stack capable with Node.js, NestJS, PostgreSQL, Redis and Docker.',
   'Open-source author of 5 npm packages, including rn-vlc-plyr, a VLC player built with Nitro Modules (Kotlin, Swift, C++). Upstream contributor to React Native, TanStack Query, DefinitelyTyped, react-native-config and tinode-js. Stack Overflow: 33K+ reputation, 476 answers, 40M+ people reached.',
+  'Led frontend teams, designed scalable architectures for e-commerce, social networking, fintech and crypto exchange products, and set engineering standards (ESLint, testing, CI/CD) that became company-wide references.',
   'Uses AI agent workflows (Claude Code, MCP) to automate the path from ticket to merge request, code review and design-to-code checks, and keeps type-safe, clean code across the stack.',
 ];
 

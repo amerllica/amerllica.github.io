@@ -55,7 +55,7 @@ export function Hero() {
             </h1>
             <div className="flex items-center justify-center gap-2 text-xl md:text-2xl text-accent">
               <Code className="w-6 h-6" />
-              <span className="font-mono">{resume.profile.title}</span>
+              <span className="font-mono">{resume.profile.headline}</span>
             </div>
           </motion.div>
 
