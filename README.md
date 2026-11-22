@@ -56,7 +56,7 @@ The resume data lives in `src/data/resume/`. The website and the PDF/DOCX resume
 yarn resume:build
 ```
 
-This writes `public/Amer_Lotfi-Orimi_Oct-2026.pdf` and `.docx` and runs the ATS check. The files are not committed; `yarn export` and CI build them.
+This writes `public/Amer_Lotfi-Orimi_Nov-2026.pdf` and `.docx` and runs the ATS check. The files are not committed; `yarn export` and CI build them.
 
 ---
 
