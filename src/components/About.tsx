@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Code2, Zap, Rocket, Bot } from 'lucide-react';
-import { formatLocation, phoneHref, resume } from '@/data/resume';
+import { formatLocation, resume } from '@/data/resume';
 import { Highlight } from '@/lib/highlight';
 import { SectionHeader } from './SectionHeader';
 
@@ -35,7 +35,7 @@ export function About() {
           </div>
 
           {/* Location & Contact info */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-secondary border border-border rounded-lg p-4 text-center">
               <p className="text-muted-foreground text-sm mb-1">Location</p>
               <p className="text-primary font-semibold">{formatLocation(resume.profile)}</p>
@@ -47,15 +47,6 @@ export function About() {
                 className="text-primary font-semibold hover:text-accent transition-colors"
               >
                 {resume.profile.email}
-              </a>
-            </div>
-            <div className="bg-secondary border border-border rounded-lg p-4 text-center">
-              <p className="text-muted-foreground text-sm mb-1">Phone</p>
-              <a 
-                href={phoneHref(resume.profile.phone)}
-                className="text-primary font-semibold hover:text-accent transition-colors"
-              >
-                {resume.profile.phone}
               </a>
             </div>
           </div>

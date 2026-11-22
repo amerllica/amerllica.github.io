@@ -10,5 +10,3 @@ export const formatPeriod = (start: Month, end: Month | 'Present') =>
 
 export const formatLocation = ({ city, country, workMode }: Pick<Profile, 'city' | 'country' | 'workMode'>) =>
   `${city}, ${country} (${workMode})`;
-
-export const phoneHref = (phone: string) => `tel:${phone.replace(/\s/g, '')}`;

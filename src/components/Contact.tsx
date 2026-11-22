@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Phone, type LucideIcon } from 'lucide-react';
+import { Github, Linkedin, Mail, type LucideIcon } from 'lucide-react';
 import { FaStackOverflow, FaMedium, FaNpm } from 'react-icons/fa6';
 import type { IconType } from 'react-icons';
 import { Button } from '@/components/ui/button';
-import { phoneHref, resume, type LinkLabel } from '@/data/resume';
+import { resume, type LinkLabel } from '@/data/resume';
 import { SectionHeader } from './SectionHeader';
 
-const { email, phone, links } = resume.profile;
+const { email, links } = resume.profile;
 
 const socialIcons: Record<LinkLabel, IconType | LucideIcon> = {
   LinkedIn: Linkedin,
@@ -45,19 +45,6 @@ export function Contact() {
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
                   <p className="text-foreground font-mono">{email}</p>
-                </div>
-              </a>
-
-              <a
-                href={phoneHref(phone)}
-                className="flex items-center gap-4 bg-card border border-border rounded-lg p-4 hover:border-primary/50 transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,255,102,0.1)] group"
-              >
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <Phone className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground">Phone</p>
-                  <p className="text-foreground font-mono">{phone}</p>
                 </div>
               </a>
             </div>
